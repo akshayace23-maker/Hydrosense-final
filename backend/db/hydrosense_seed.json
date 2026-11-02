@@ -1,0 +1,647 @@
+{
+  "users": [
+    {
+      "name": "Vedasri",
+      "role": "citizen",
+      "email": "vedasri@example.com"
+    },
+    {
+      "name": "Vidyadevi",
+      "role": "citizen",
+      "email": "vidyadevi@example.com"
+    },
+    {
+      "name": "Bharani",
+      "role": "citizen",
+      "email": "bharani@example.com"
+    },
+    {
+      "name": "Akshaya",
+      "role": "authority",
+      "email": "akshaya@krct.ac.in"
+    },
+    {
+      "name": "Abinaya",
+      "role": "authority",
+      "email": "abinaya@krct.ac.in"
+    }
+  ],
+  "reports": [
+    {
+      "reportId": "HS-TRY-001",
+      "waterBodyName": "Uyyakondan Canal",
+      "locationDescription": "Palakkarai bridge and nearby stretches",
+      "complaintCategory": "Sewage",
+      "observationDescription": "Untreated wastewater is reportedly entering the Uyyakondan Canal near Palakkarai. Please inspect the discharge points, trace the source, stop direct sewage entry and ensure wastewater is diverted for treatment.",
+      "reportedDate": "2026-02-08",
+      "reporter": "Vidyadevi",
+      "status": "Inspection required",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Palakkarai%20bridge%20and%20nearby%20stretches%20Uyyakondan%20Canal%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vidyadevi",
+          "date": "2026-02-08",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-002",
+      "waterBodyName": "Uyyakondan Canal",
+      "locationDescription": "Between Government Hospital area and Allithurai Bridge, near Vasan Nagar",
+      "complaintCategory": "Garbage",
+      "observationDescription": "Solid waste including plastic, food waste and other refuse has reportedly been dumped and burnt along the canal bank. Please remove the waste, prevent further dumping and investigate the reported burning.",
+      "reportedDate": "2026-01-17",
+      "reporter": "Bharani",
+      "status": "Action taken",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Between%20Government%20Hospital%20area%20and%20Allithurai%20Bridge%2C%20near%20Vasan%20Nagar%20Uyyakondan%20Canal%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Bharani",
+          "date": "2026-01-17",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        },
+        {
+          "status": "Action taken",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Cleanup / corrective work carried out."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-003",
+      "waterBodyName": "Uyyakondan Canal",
+      "locationDescription": "Near Kuzhumayi Amman Temple",
+      "complaintCategory": "Foam",
+      "observationDescription": "White foam and unusual water appearance have been observed near the canal. Please inspect nearby outlets and collect water samples to identify the cause. Do not assume chemical contamination without testing.",
+      "reportedDate": "2026-05-07",
+      "reporter": "Vedasri",
+      "status": "Assigned",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Near%20Kuzhumayi%20Amman%20Temple%20Uyyakondan%20Canal%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vedasri",
+          "date": "2026-05-07",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-004",
+      "waterBodyName": "Uyyakondan Canal",
+      "locationDescription": "Multiple stretches through the city",
+      "complaintCategory": "Invasive plants",
+      "observationDescription": "Water hyacinth is covering sections of the canal and may obstruct flow. Please clear affected stretches, inspect contributing wastewater sources and monitor regrowth.",
+      "reportedDate": "2026-06-30",
+      "reporter": "Vidyadevi",
+      "status": "Follow-up required",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Multiple%20stretches%20through%20the%20city%20Uyyakondan%20Canal%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live; Times of India (24 Sep 2026)",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vidyadevi",
+          "date": "2026-06-30",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        },
+        {
+          "status": "Follow-up required",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Regrowth reported; monitoring continues."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-005",
+      "waterBodyName": "Uyyakondan Canal",
+      "locationDescription": "Anna Nagar Link Road and other canal-side locations",
+      "complaintCategory": "Garbage",
+      "observationDescription": "Garbage is reportedly being dumped along the canal-side hotspot. Please remove accumulated waste, install suitable barriers or signage and monitor repeat dumping.",
+      "reportedDate": "2026-06-18",
+      "reporter": "Bharani",
+      "status": "Assigned",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Anna%20Nagar%20Link%20Road%20and%20other%20canal-side%20locations%20Uyyakondan%20Canal%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Bharani",
+          "date": "2026-06-18",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-006",
+      "waterBodyName": "Mavadikulam Tank",
+      "locationDescription": "Ponmalaipatti / Railway Colony area",
+      "complaintCategory": "Sewage",
+      "observationDescription": "Sewage is reportedly entering Mavadikulam Tank while rehabilitation work is underway. Please identify and divert the wastewater source, inspect the tank and continue restoration with follow-up monitoring.",
+      "reportedDate": "2026-06-13",
+      "reporter": "Vedasri",
+      "status": "Action taken",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Ponmalaipatti%20/%20Railway%20Colony%20area%20Mavadikulam%20Tank%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "Times of India",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vedasri",
+          "date": "2026-06-13",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        },
+        {
+          "status": "Action taken",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Cleanup / corrective work carried out."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-007",
+      "waterBodyName": "Cauvery River",
+      "locationDescription": "Amma Mandapam bathing ghat, Srirangam",
+      "complaintCategory": "Dead fish",
+      "observationDescription": "Dead fish and accumulated waste have been observed along the Cauvery riverbank near Amma Mandapam. Please remove carcasses safely, inspect the area and test water quality and dissolved oxygen to investigate the cause.",
+      "reportedDate": "2026-07-29",
+      "reporter": "Vidyadevi",
+      "status": "Inspection required",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Amma%20Mandapam%20bathing%20ghat%2C%20Srirangam%20Cauvery%20River%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "DT Next; Times of India",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vidyadevi",
+          "date": "2026-07-29",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-008",
+      "waterBodyName": "Kudamurutti River",
+      "locationDescription": "Near Chettipalam / MGR Roundabout area",
+      "complaintCategory": "Sewage",
+      "observationDescription": "Possible sewage contamination is reported in the Kudamurutti River. Please inspect the confluence and nearby drains, identify discharge points and carry out water-quality testing.",
+      "reportedDate": "2026-07-21",
+      "reporter": "Bharani",
+      "status": "Pending",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Near%20Chettipalam%20/%20MGR%20Roundabout%20area%20Kudamurutti%20River%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "Times of India",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Bharani",
+          "date": "2026-07-21",
+          "note": "Report filed (draft from news compilation)."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-009",
+      "waterBodyName": "Koraiyar River",
+      "locationDescription": "Panchappur Sewage Treatment Plant / Koraiyar channel",
+      "complaintCategory": "Sewage",
+      "observationDescription": "Residents have raised concerns about possible untreated wastewater leaving the Panchappur treatment facility and entering the Koraiyar. Please inspect plant operation, verify treatment quality and prevent any untreated discharge.",
+      "reportedDate": "2026-09-17",
+      "reporter": "Vedasri",
+      "status": "Assigned",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Panchappur%20Sewage%20Treatment%20Plant%20/%20Koraiyar%20channel%20Koraiyar%20River%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "Dinamani; NoCaps",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vedasri",
+          "date": "2026-09-17",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-010",
+      "waterBodyName": "Koraiyar River",
+      "locationDescription": "Viswas Nagar riverbank",
+      "complaintCategory": "Garbage",
+      "observationDescription": "A garbage mound has been reported beside the Koraiyar riverbank at Viswas Nagar. Please clear the accumulated waste, prevent further dumping and monitor the location.",
+      "reportedDate": "2026-10-06",
+      "reporter": "Vidyadevi",
+      "status": "Resolved",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Viswas%20Nagar%20riverbank%20Koraiyar%20River%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "Times of India",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vidyadevi",
+          "date": "2026-10-06",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        },
+        {
+          "status": "Action taken",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Cleanup / corrective work carried out."
+        },
+        {
+          "status": "Resolved",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Re-inspected; area found clear."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-011",
+      "waterBodyName": "Panjappur, Kothamangalam and Pirattiyur Lakes",
+      "locationDescription": "Panjappur, Kothamangalam and Pirattiyur",
+      "complaintCategory": "Invasive plants",
+      "observationDescription": "Dense invasive trees and aquatic weeds are reportedly obstructing parts of the lake and its feeder channels. Please inspect the affected stretches, clear vegetation where appropriate and restore water flow.",
+      "reportedDate": "2025-08-11",
+      "reporter": "Bharani",
+      "status": "Pending",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Panjappur%2C%20Kothamangalam%20and%20Pirattiyur%20Panjappur%2C%20Kothamangalam%20and%20Pirattiyur%20Lakes%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "The New Indian Express",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Bharani",
+          "date": "2025-08-11",
+          "note": "Report filed (draft from news compilation)."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-012",
+      "waterBodyName": "Kollankulam Tank",
+      "locationDescription": "Edamalaipatti Pudur",
+      "complaintCategory": "Invasive plants",
+      "observationDescription": "Water hyacinth is visibly covering portions of Kollankulam. Please inspect the tank, remove excessive weeds and assess whether solid waste or wastewater is entering the water body.",
+      "reportedDate": "2025-12-31",
+      "reporter": "Vedasri",
+      "status": "Pending",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Edamalaipatti%20Pudur%20Kollankulam%20Tank%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vedasri",
+          "date": "2025-12-31",
+          "note": "Report filed (draft from news compilation)."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-013",
+      "waterBodyName": "Neglected tanks (Punganur, Malaipatti, Kallikudi, Kokkarasampettai, Ellakudi)",
+      "locationDescription": "Punganur, Malaipatti, Kallikudi, Kokkarasampettai, Ellakudi",
+      "complaintCategory": "Maintenance (verify on site)",
+      "observationDescription": "These water bodies were identified in local reporting as requiring restoration or improved maintenance. Please conduct a field inspection to document any current garbage, sewage, encroachment or vegetation issue.",
+      "reportedDate": "2025-12-31",
+      "reporter": "Vidyadevi",
+      "status": "Inspection required",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Punganur%2C%20Malaipatti%2C%20Kallikudi%2C%20Kokkarasampettai%2C%20Ellakudi%20Neglected%20tanks%20%28Punganur%2C%20Malaipatti%2C%20Kallikudi%2C%20Kokkarasampettai%2C%20Ellakudi%29%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Vidyadevi",
+          "date": "2025-12-31",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        },
+        {
+          "status": "Inspection required",
+          "by": "Abinaya",
+          "date": null,
+          "note": "Site inspection scheduled; sample collection needed."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    },
+    {
+      "reportId": "HS-TRY-014",
+      "waterBodyName": "Rettai Vaikal and Kottai Vaikal",
+      "locationDescription": "Rettai Vaikal (Ward 31) and Kottai Vaikal",
+      "complaintCategory": "Garbage",
+      "observationDescription": "Waste dumping has been reported at vulnerable canal-bank locations. Please inspect the exact dumping point, remove waste, provide protective barriers and monitor repeat incidents.",
+      "reportedDate": "2026-06-18",
+      "reporter": "Bharani",
+      "status": "Assigned",
+      "mapSearchUrl": "https://www.google.com/maps/search/?api=1&query=Rettai%20Vaikal%20%28Ward%2031%29%20and%20Kottai%20Vaikal%20Rettai%20Vaikal%20and%20Kottai%20Vaikal%2C%20Tiruchirappalli%2C%20Tamil%20Nadu",
+      "latitude": null,
+      "longitude": null,
+      "evidencePhoto": null,
+      "newsReference": "India Live",
+      "lastVerifiedDate": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "by": "Bharani",
+          "date": "2026-06-18",
+          "note": "Report filed (draft from news compilation)."
+        },
+        {
+          "status": "Assigned",
+          "by": "Akshaya",
+          "date": null,
+          "note": "Assigned to field officer."
+        }
+      ],
+      "verificationNote": "Historical news report; verify on site before marking active/resolved."
+    }
+  ],
+  "news": [
+    {
+      "newsId": "N-001",
+      "reportId": "HS-TRY-001",
+      "waterBodyName": "Uyyakondan Canal",
+      "publisher": "India Live",
+      "publishedDate": "2026-02-08",
+      "summary": "Untreated wastewater is reportedly entering the Uyyakondan Canal near Palakkarai. Please inspect the discharge points, trace the source, stop direct sewage entry and ensure wastewater is diverted for treatment.",
+      "url": null
+    },
+    {
+      "newsId": "N-002",
+      "reportId": "HS-TRY-002",
+      "waterBodyName": "Uyyakondan Canal",
+      "publisher": "India Live",
+      "publishedDate": "2026-01-17",
+      "summary": "Solid waste including plastic, food waste and other refuse has reportedly been dumped and burnt along the canal bank. Please remove the waste, prevent further dumping and investigate the reported burning.",
+      "url": null
+    },
+    {
+      "newsId": "N-003",
+      "reportId": "HS-TRY-003",
+      "waterBodyName": "Uyyakondan Canal",
+      "publisher": "India Live",
+      "publishedDate": "2026-05-07",
+      "summary": "White foam and unusual water appearance have been observed near the canal. Please inspect nearby outlets and collect water samples to identify the cause. Do not assume chemical contamination without testing.",
+      "url": null
+    },
+    {
+      "newsId": "N-004",
+      "reportId": "HS-TRY-004",
+      "waterBodyName": "Uyyakondan Canal",
+      "publisher": "India Live; Times of India (24 Sep 2026)",
+      "publishedDate": "2026-06-30",
+      "summary": "Water hyacinth is covering sections of the canal and may obstruct flow. Please clear affected stretches, inspect contributing wastewater sources and monitor regrowth.",
+      "url": null
+    },
+    {
+      "newsId": "N-005",
+      "reportId": "HS-TRY-005",
+      "waterBodyName": "Uyyakondan Canal",
+      "publisher": "India Live",
+      "publishedDate": "2026-06-18",
+      "summary": "Garbage is reportedly being dumped along the canal-side hotspot. Please remove accumulated waste, install suitable barriers or signage and monitor repeat dumping.",
+      "url": null
+    },
+    {
+      "newsId": "N-006",
+      "reportId": "HS-TRY-006",
+      "waterBodyName": "Mavadikulam Tank",
+      "publisher": "Times of India",
+      "publishedDate": "2026-06-13",
+      "summary": "Sewage is reportedly entering Mavadikulam Tank while rehabilitation work is underway. Please identify and divert the wastewater source, inspect the tank and continue restoration with follow-up monitoring.",
+      "url": null
+    },
+    {
+      "newsId": "N-007",
+      "reportId": "HS-TRY-007",
+      "waterBodyName": "Cauvery River",
+      "publisher": "DT Next; Times of India",
+      "publishedDate": "2026-07-29",
+      "summary": "Dead fish and accumulated waste have been observed along the Cauvery riverbank near Amma Mandapam. Please remove carcasses safely, inspect the area and test water quality and dissolved oxygen to investigate the cause.",
+      "url": null
+    },
+    {
+      "newsId": "N-008",
+      "reportId": "HS-TRY-008",
+      "waterBodyName": "Kudamurutti River",
+      "publisher": "Times of India",
+      "publishedDate": "2026-07-21",
+      "summary": "Possible sewage contamination is reported in the Kudamurutti River. Please inspect the confluence and nearby drains, identify discharge points and carry out water-quality testing.",
+      "url": null
+    },
+    {
+      "newsId": "N-009",
+      "reportId": "HS-TRY-009",
+      "waterBodyName": "Koraiyar River",
+      "publisher": "Dinamani; NoCaps",
+      "publishedDate": "2026-09-17",
+      "summary": "Residents have raised concerns about possible untreated wastewater leaving the Panchappur treatment facility and entering the Koraiyar. Please inspect plant operation, verify treatment quality and prevent any untreated discharge.",
+      "url": null
+    },
+    {
+      "newsId": "N-010",
+      "reportId": "HS-TRY-010",
+      "waterBodyName": "Koraiyar River",
+      "publisher": "Times of India",
+      "publishedDate": "2026-10-06",
+      "summary": "A garbage mound has been reported beside the Koraiyar riverbank at Viswas Nagar. Please clear the accumulated waste, prevent further dumping and monitor the location.",
+      "url": null
+    },
+    {
+      "newsId": "N-011",
+      "reportId": "HS-TRY-011",
+      "waterBodyName": "Panjappur, Kothamangalam and Pirattiyur Lakes",
+      "publisher": "The New Indian Express",
+      "publishedDate": "2025-08-11",
+      "summary": "Dense invasive trees and aquatic weeds are reportedly obstructing parts of the lake and its feeder channels. Please inspect the affected stretches, clear vegetation where appropriate and restore water flow.",
+      "url": null
+    },
+    {
+      "newsId": "N-012",
+      "reportId": "HS-TRY-012",
+      "waterBodyName": "Kollankulam Tank",
+      "publisher": "India Live",
+      "publishedDate": "2025-12-31",
+      "summary": "Water hyacinth is visibly covering portions of Kollankulam. Please inspect the tank, remove excessive weeds and assess whether solid waste or wastewater is entering the water body.",
+      "url": null
+    },
+    {
+      "newsId": "N-013",
+      "reportId": "HS-TRY-013",
+      "waterBodyName": "Neglected tanks (Punganur, Malaipatti, Kallikudi, Kokkarasampettai, Ellakudi)",
+      "publisher": "India Live",
+      "publishedDate": "2025-12-31",
+      "summary": "These water bodies were identified in local reporting as requiring restoration or improved maintenance. Please conduct a field inspection to document any current garbage, sewage, encroachment or vegetation issue.",
+      "url": null
+    },
+    {
+      "newsId": "N-014",
+      "reportId": "HS-TRY-014",
+      "waterBodyName": "Rettai Vaikal and Kottai Vaikal",
+      "publisher": "India Live",
+      "publishedDate": "2026-06-18",
+      "summary": "Waste dumping has been reported at vulnerable canal-bank locations. Please inspect the exact dumping point, remove waste, provide protective barriers and monitor repeat incidents.",
+      "url": null
+    }
+  ]
+}

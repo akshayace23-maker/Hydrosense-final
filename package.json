@@ -1,0 +1,13 @@
+{
+  "name": "hydrosense",
+  "version": "2.0.0",
+  "private": true,
+  "description": "HydroSense \u2014 citizen\u2013government water-body monitoring platform (Express + SQLite + static frontend)",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "postinstall": "cd backend && npm install --omit=dev",
+    "start": "node backend/server.js"
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>HydroSense — Citizen–Government Water Protection Network</title>
+<meta name="description" content="Report water-body problems with a photo and location, track them to resolution, and help authorities restore ponds, lakes, rivers and tanks. Available in English and Tamil.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="hs-header"></div>
+
+<main>
+<header class="hero">
+  <div class="hero__fallback"></div>
+  <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__inner">
+    <div>
+      <span class="hero__tag">Citizen–Government Water Bridge</span>
+      <h1>Protect the water bodies of your town</h1>
+      <p class="hero__sub">See It. Report It. Protect It.</p>
+      <p class="lead">Report what you see at a pond, lake or river. Neighbours confirm it, authorities inspect it, and every water body builds a lasting environmental history.</p>
+      <div class="hero__ctas">
+        <a href="/report.html" class="btn btn-primary">Report an Issue →</a>
+        <a href="/track.html" class="btn btn-ghost">Track a Report</a>
+        <a href="/map.html" class="btn btn-ghost">Explore the Map</a>
+      </div>
+      <div class="hero__stats" id="heroStats" aria-live="polite"></div>
+    </div>
+    <div class="hero__space" aria-hidden="true"></div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">How it works</span>
+    <h2 style="max-width:640px;">From a photo on your phone to action on the ground</h2>
+    <div class="flow reveal" style="margin-top:30px;">
+      <div class="card card--hover"><h4>Observe</h4><p>Notice a visible problem at a pond, lake, river or tank.</p></div>
+      <div class="card card--hover"><h4>Report</h4><p>Photo, location and what you saw — two minutes, no jargon.</p></div>
+      <div class="card card--hover"><h4>Verify</h4><p>Nearby citizens can confirm with "I See This Too."</p></div>
+      <div class="card card--hover"><h4>Act</h4><p>Authorities inspect, intervene, and document before/after.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <span class="eyebrow">The gap today</span>
+    <div class="grid-2 reveal">
+      <div class="card">
+        <h3>Without HydroSense</h3>
+        <p>A citizen notices a problem → takes a photo → doesn't know where to report it → files a general complaint → it gets routed around → the citizen waits → it's unclear whether the water body ever improved.</p>
+      </div>
+      <div class="card card--accent">
+        <h3>With HydroSense</h3>
+        <p>Observe → Report → Locate → Confirm → Authority action → Follow-up → Before/after evidence, all tied to a Report ID the citizen can track from submission to resolution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Two separate experiences</span>
+    <div class="grid-2 reveal">
+      <div class="card card--hover">
+        <div class="feature-icon">👤</div>
+        <h3>Citizen</h3>
+        <p>Report a problem, track it by Report ID, confirm nearby reports, add follow-up photos, browse water-body profiles and public updates.</p>
+        <a href="/register.html?role=citizen" class="btn btn-outline">Create a citizen account</a>
+      </div>
+      <div class="card card--hover">
+        <div class="feature-icon">🏛️</div>
+        <h3>Authority</h3>
+        <p>Review incoming reports, run field inspections, record actions and restoration evidence, publish public updates. Restricted to official <strong data-no-tr>@krct.ac.in</strong> addresses with an administrator invite code.</p>
+        <a href="/register.html?role=authority" class="btn btn-outline">Authority sign-up</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="container">
+    <span class="eyebrow">Why it's different</span>
+    <h2 style="max-width:640px;">Water-body-centric, not just complaint-centric</h2>
+    <div class="grid-3 reveal" style="margin-top:32px;">
+      <div class="card card--hover">
+        <div class="feature-icon">👀</div>
+        <h4>I See This Too</h4>
+        <p>Community confirmation reduces duplicate reports and raises priority when many citizens see the same issue.</p>
+        <a href="/community.html" class="btn btn-outline btn-sm" style="margin-top:12px;">See open reports →</a>
+      </div>
+      <div class="card card--hover">
+        <div class="feature-icon">🔁</div>
+        <h4>Before → Action → After</h4>
+        <p>Every intervention is paired with follow-up evidence, creating real restoration accountability.</p>
+      </div>
+      <div class="card card--hover">
+        <div class="feature-icon">🗺️</div>
+        <h4>A living water-body history</h4>
+        <p>Each pond, lake or river gets a long-term profile: reports, inspections, actions and community activity in one place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Built for everyone</span>
+    <h2 style="max-width:640px;">Secure, private and available in your language</h2>
+    <div class="grid-3 reveal" style="margin-top:32px;">
+      <div class="card card--hover">
+        <div class="feature-icon">🌐</div>
+        <h4>English and Tamil</h4>
+        <p>Switch the whole website between English and தமிழ் at any time with one tap. Your choice is remembered.</p>
+      </div>
+      <div class="card card--hover">
+        <div class="feature-icon">🔒</div>
+        <h4>Your privacy, protected</h4>
+        <p>Report anonymously and authorities never see who you are. Hidden location data inside your photos is removed before they are stored.</p>
+      </div>
+      <div class="card card--hover">
+        <div class="feature-icon">✉️</div>
+        <h4>Updates in your inbox</h4>
+        <p>When your report moves forward — inspection, action taken, resolved — you can be notified by email using your Report ID.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight band" style="text-align:center;">
+  <div class="container">
+    <span class="eyebrow">Important principle</span>
+    <h2 style="max-width:720px; margin:0 auto 14px;">AI assists. It never decides.</h2>
+    <p style="max-width:640px; margin:0 auto;">HydroSense can flag possible visible indicators in a photo and suggest a follow-up question — but official verification always requires authority review and, where needed, field inspection. Citizen observation, AI-assisted assessment, authority inspection and laboratory measurement are always shown separately, never blended.</p>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <div class="container">
+    <h2>Ready to protect a water body near you?</h2>
+    <p style="max-width:520px; margin:0 auto 24px;">It takes about two minutes to file your first report.</p>
+    <a href="/register.html?role=citizen" class="btn btn-primary">Report a Water Issue</a>
+  </div>
+</section>
+</main>
+
+<div id="hs-footer"></div>
+
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script type="module" src="/js/landing3d.js"></script>
+<script src="/js/pages/index.js"></script>
+</body>
+</html>

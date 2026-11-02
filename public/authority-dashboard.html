@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>Authority Dashboard — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="container section--tight">
+  <div class="sidebar-layout">
+    <div class="sidebar">
+      <a href="/authority-dashboard.html" class="active">Dashboard</a>
+      <a href="/map.html">GIS Map</a>
+      <a href="/news.html">News & Updates</a>
+      <a href="/api/reports/export.csv">Export CSV</a>
+    </div>
+    <div>
+      <h2>Authority dashboard</h2>
+      <div class="grid-4" id="statCards"></div>
+
+      <div id="alertsPanel" style="margin-top:20px;"></div>
+
+      <div class="grid-2" style="margin-top:24px;">
+        <div class="card">
+          <h4>Reports over the last 30 days</h4>
+          <div id="chartByDay"></div>
+        </div>
+        <div class="card">
+          <h4>Status distribution</h4>
+          <div id="chartByStatus"></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:20px;">
+        <h4>Issue categories reported</h4>
+        <div id="chartByCategory"></div>
+      </div>
+
+      <div class="card" style="margin-top:24px;">
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:end;">
+          <div class="field" style="margin:0;">
+            <label>Status</label>
+            <select id="fStatus"><option value="">All</option></select>
+          </div>
+          <div class="field" style="margin:0;">
+            <label>Priority</label>
+            <select id="fPriority"><option value="">All</option><option>low</option><option>normal</option><option>high</option><option>critical</option></select>
+          </div>
+          <button class="btn btn-outline btn-sm" id="filterBtn">Apply filters</button>
+        </div>
+      </div>
+
+      <div id="reportList" style="margin-top:20px;"></div>
+    </div>
+  </div>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/charts.js"></script>
+<script src="/js/pages/authority-dashboard.js"></script>
+</body>
+</html>

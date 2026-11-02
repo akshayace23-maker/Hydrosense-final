@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>My Reports — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="container section--tight">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+    <h2 data-i18n="page_dashboard">My reports</h2>
+    <a href="/report.html" class="btn btn-primary">+ Report a water issue</a>
+  </div>
+  <div id="badgeBox" style="margin:16px 0;"></div>
+  <div id="list" class="grid-3" style="margin-top:20px;"></div>
+  <p id="empty" data-i18n="empty_reports" style="display:none;">You haven't submitted any reports yet.</p>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/pages/dashboard.js"></script>
+</body>
+</html>

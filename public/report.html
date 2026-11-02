@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>Report a Water Issue — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/vendor-leaflet.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="container section--tight">
+  <h2 data-i18n="report_title">Report a water-body issue</h2>
+  <p>A few quick steps — you can attach photos and pinpoint the location.</p>
+  <div class="steps-nav" id="stepsNav">
+    <span data-step="1" class="active" data-i18n="report_step1">1 · Water body</span>
+    <span data-step="2" data-i18n="report_step2">2 · Photo evidence</span>
+    <span data-step="3" data-i18n="report_step3">3 · What you observed</span>
+    <span data-step="4" data-i18n="report_step4">4 · Review & submit</span>
+  </div>
+  <div id="alertBox"></div>
+
+  <form id="reportForm">
+    <!-- STEP 1 -->
+    <div class="step card" data-step="1">
+      <div class="field">
+        <label data-i18n="field_wb_type">Water body type</label>
+        <select id="water_body_type" required>
+          <option value="pond">Pond</option>
+          <option value="lake">Lake</option>
+          <option value="river">River</option>
+          <option value="reservoir">Reservoir</option>
+          <option value="tank">Tank</option>
+          <option value="wetland">Wetland</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="water_body_name" data-i18n="field_wb_name">Water body name</label>
+        <input type="text" id="water_body_name" placeholder="e.g. Kaveri Kulam, or leave blank">
+        <div class="hint">Don't know the name? Leave this blank and just pin the location below.</div>
+      </div>
+      <div class="field">
+        <label data-i18n="field_location">Location</label>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <button type="button" class="btn btn-primary btn-sm" id="useLocationBtn" data-i18n="field_use_location">📍 Use my current location</button>
+          <span class="hint" id="locStatus" role="status" aria-live="polite" style="margin:0;"></span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="geoPaste">Paste a Google Maps link or GPS coordinates</label>
+        <input type="text" id="geoPaste" autocomplete="off" inputmode="url" placeholder="e.g. https://maps.app.goo.gl/… or 10.9503, 78.6911">
+        <div class="hint" id="geoStatus" role="status" aria-live="polite">The pin moves automatically as soon as you paste a link or coordinates.</div>
+      </div>
+      <div class="field">
+        <div id="map" style="height:300px;"></div>
+        <div class="hint" id="coordsLine">Tap the map or drag the marker to set the exact spot. We never read your location without the button being pressed.</div>
+      </div>
+      <div class="field">
+        <label for="address" data-i18n="field_address">Approximate address / landmark (optional)</label>
+        <input type="text" id="address" placeholder="e.g. Behind Anna Nagar bus stop">
+      </div>
+      <div id="nearbyBox"></div>
+      <div style="text-align:right;"><button type="button" class="btn btn-primary" data-goto="2">Next</button></div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="step card" data-step="2" style="display:none;">
+      <div class="field">
+        <label data-i18n="field_photos">Photo evidence</label>
+        <input type="file" id="photos" accept="image/jpeg,image/png,image/webp" multiple>
+        <div class="hint">Up to 6 photos, JPG/PNG/WEBP, 12MB each. If your photo has GPS metadata we'll use it; if not, we'll use the map location from step 1 — a missing GPS tag never blocks your report.</div>
+      </div>
+      <div id="photoPreview" class="grid-3" style="margin-top:14px;"></div>
+      <div style="display:flex; justify-content:space-between; margin-top:16px;">
+        <button type="button" class="btn btn-outline" data-goto="1">Back</button>
+        <button type="button" class="btn btn-primary" data-goto="3">Next</button>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="step card" data-step="3" style="display:none;">
+      <div class="field">
+        <label data-i18n="field_observed">What did you observe? (select all that apply)</label>
+        <div class="checkbox-grid">
+          <label class="check-tile"><input type="checkbox" value="dead_fish"> 🐟 Dead fish</label>
+          <label class="check-tile"><input type="checkbox" value="floating_garbage"> 🗑️ Garbage</label>
+          <label class="check-tile"><input type="checkbox" value="excessive_vegetation"> 🌿 Excessive plants</label>
+          <label class="check-tile"><input type="checkbox" value="foul_smell"> 💨 Foul smell</label>
+          <label class="check-tile"><input type="checkbox" value="possible_discharge_outlet"> 🚰 Possible sewage/inflow</label>
+          <label class="check-tile"><input type="checkbox" value="algal_growth"> 🟢 Green/algal-looking surface</label>
+          <label class="check-tile"><input type="checkbox" value="muddy_water"> 🟤 Muddy-looking water</label>
+          <label class="check-tile"><input type="checkbox" value="foam_froth"> 🫧 Foam/froth</label>
+          <label class="check-tile"><input type="checkbox" value="unusual_water_level"> 🌊 Unusual water level</label>
+          <label class="check-tile"><input type="checkbox" value="encroachment_construction"> 🏗️ Encroachment/construction</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="additional_notes" data-i18n="field_notes">Anything else you noticed?</label>
+        <textarea id="additional_notes" rows="4" maxlength="2000" placeholder="Describe what you saw in your own words."></textarea>
+      </div>
+      <div class="field">
+        <label class="check-tile" style="max-width:340px;"><input type="checkbox" id="is_anonymous"> <span data-i18n="field_anon">Report anonymously</span></label>
+        <div class="hint">Your name/email won't be shown to authorities or the public. You can still track your report from "My Reports" since you're logged in.</div>
+      </div>
+      <div style="display:flex; justify-content:space-between;">
+        <button type="button" class="btn btn-outline" data-goto="2">Back</button>
+        <button type="button" class="btn btn-primary" data-action="review">Review report</button>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="step card" data-step="4" style="display:none;">
+      <h3>Report summary</h3>
+      <div id="summaryBox"></div>
+      <div style="display:flex; justify-content:space-between; margin-top:16px;">
+        <button type="button" class="btn btn-outline" data-goto="3">Back</button>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Submit report</button>
+      </div>
+    </div>
+  </form>
+
+  <div id="successBox"></div>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/ai-ui.js"></script>
+<script src="/js/vendor/leaflet.js"></script>
+<script src="/js/vendor/exifr-lite.js"></script>
+<script src="/js/geo.js"></script>
+<script src="/js/pages/report.js"></script>
+</body>
+</html>

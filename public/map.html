@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>GIS Map — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="/css/vendor-leaflet.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="container section--tight">
+  <h2>Water-body GIS map</h2>
+  <p>Real reported data only — nothing here is simulated.</p>
+
+  <div class="card" style="margin-bottom:16px;">
+    <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:end;">
+      <div class="field" style="margin:0;">
+        <label>View</label>
+        <select id="layerSelect">
+          <option value="waterbodies">Water bodies</option>
+          <option value="reports">Individual reports</option>
+          <option value="heatmap">Report density (heatmap)</option>
+        </select>
+      </div>
+      <div class="field" style="margin:0;">
+        <label>Status</label>
+        <select id="fStatus"><option value="">All</option></select>
+      </div>
+      <div class="field" style="margin:0;">
+        <label>Issue type</label>
+        <select id="fCategory">
+          <option value="">All</option>
+          <option value="dead_fish">Dead fish</option>
+          <option value="floating_garbage">Garbage</option>
+          <option value="excessive_vegetation">Excessive plants</option>
+          <option value="foul_smell">Foul smell</option>
+          <option value="possible_discharge_outlet">Possible sewage/inflow</option>
+          <option value="algal_growth">Algal growth</option>
+          <option value="muddy_water">Muddy water</option>
+          <option value="foam_froth">Foam/froth</option>
+          <option value="unusual_water_level">Unusual water level</option>
+          <option value="encroachment_construction">Encroachment</option>
+        </select>
+      </div>
+      <div class="field" style="margin:0;">
+        <label>Priority / severity</label>
+        <select id="fPriority"><option value="">All</option><option>low</option><option>normal</option><option>high</option><option>critical</option></select>
+      </div>
+      <div class="field" style="margin:0;">
+        <label>Date range</label>
+        <select id="fDays"><option value="">All time</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="365">Last year</option></select>
+      </div>
+      <button class="btn btn-primary btn-sm" id="applyBtn">Apply</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+  <div class="legend">
+    <span><i style="background:#5fb98a"></i> Mostly resolved</span>
+    <span><i style="background:#d98e3f"></i> Active issues</span>
+    <span><i style="background:#d1495b"></i> High/critical priority open</span>
+  </div>
+  <p id="empty" style="display:none; margin-top:16px;">No data available yet — be the first to report a water-body issue.</p>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/vendor/leaflet.js"></script>
+<script src="/js/vendor/leaflet-heat.js"></script>
+<script src="/js/pages/map.js"></script>
+</body>
+</html>

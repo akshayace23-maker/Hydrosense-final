@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>Contact — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="container section--tight" style="max-width:560px;">
+  <h2>Contact</h2>
+  <p>Have a question about a report, or want to get in touch about the project? Fill this in — it opens your email app with the message ready to send.</p>
+  <form id="contactForm" class="card">
+    <div class="field"><label for="name">Name</label><input type="text" id="name" required></div>
+    <div class="field"><label for="email">Your email</label><input type="email" id="email" required></div>
+    <div class="field"><label for="purpose">Purpose</label>
+      <select id="purpose">
+        <option>General enquiry</option>
+        <option>Report assistance</option>
+        <option>Authority enquiry</option>
+        <option>Technical issue</option>
+        <option>Research collaboration</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="field"><label for="message">Message</label><textarea id="message" rows="5" required></textarea></div>
+    <button class="btn btn-primary btn-block" type="submit">Send</button>
+  </form>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/pages/contact.js"></script>
+</body>
+</html>

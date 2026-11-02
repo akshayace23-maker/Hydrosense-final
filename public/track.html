@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>Track a Report — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="container section--tight" style="max-width:640px;">
+  <h2 data-i18n="page_track">Track a report</h2>
+  <p>Search by Report ID, or by water-body name/location. No login required.</p>
+  <div class="tabs" id="modeTabs">
+    <button class="active" data-mode="code">By Report ID</button>
+    <button data-mode="place">By Water Body</button>
+  </div>
+
+  <div id="codeSearch">
+    <div class="field"><input type="text" id="codeInput" placeholder="e.g. HS-TRI-2026-04213" class="mono"></div>
+    <button class="btn btn-primary" id="trackBtn">Track</button>
+  </div>
+
+  <div id="placeSearch" style="display:none;">
+    <div class="field"><input type="text" id="placeInput" placeholder="e.g. Kaveri Kulam, or a locality name"></div>
+    <div id="placeResults"></div>
+  </div>
+
+  <div id="result" style="margin-top:24px;"></div>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/pages/track.js"></script>
+</body>
+</html>

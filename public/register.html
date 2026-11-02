@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/js/theme.js"></script>
+<title>Sign up — HydroSense</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="hs-header"></div>
+<main>
+<div class="auth-wrap">
+  <div class="auth-card card">
+    <h2>Create your account</h2>
+    <div class="tabs" id="tabs" role="tablist">
+      <button class="active" data-role="citizen" type="button">Citizen</button>
+      <button data-role="authority" type="button">Authority</button>
+    </div>
+    <div id="alertBox" role="alert"></div>
+    <form id="regForm" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" required minlength="2" maxlength="100" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required maxlength="150" autocomplete="email">
+        <div class="hint" id="emailHint"></div>
+      </div>
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" maxlength="20" autocomplete="tel">
+      </div>
+      <div class="field" id="inviteField" style="display:none;">
+        <label for="invite">Authority invite code</label>
+        <input type="password" id="invite" maxlength="100" autocomplete="off">
+        <div class="hint">Given to you by the HydroSense administrator. Required for authority accounts.</div>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="10" maxlength="72" autocomplete="new-password">
+        <div class="pw-meter"><i id="pwBar"></i></div>
+        <div class="hint">At least 10 characters, with letters and numbers.</div>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit" id="regBtn">Create account</button>
+    </form>
+    <p style="margin-top:16px; font-size:0.9rem;">Already have an account? <a href="/login.html">Log in</a></p>
+  </div>
+</div>
+</main>
+<div id="hs-footer"></div>
+<script src="/js/lang/ta.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/pages/register.js"></script>
+</body>
+</html>
